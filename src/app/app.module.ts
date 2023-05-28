@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { InicioSesionComponent } from './paginas/inicio-sesion/inicio-sesion.component';
+import { InicioLogueadoComponent } from './paginas/inicio-logueado/inicio-logueado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    InicioSesionComponent
+    InicioSesionComponent,
+    InicioLogueadoComponent
   ],
   imports: [
     BrowserModule,

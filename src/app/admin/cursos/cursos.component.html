@@ -3,4 +3,13 @@
         <br><span>CURSOS</span>
     </h1>
     <p>En esta página sólo puede ingresar un usuario logueado y con rol de <strong>ADMINISTRADOR</strong> O <strong>SUPERADMINISTRADOR</strong></p>
+
+    <div class="form">
+        <legend>Nuevo curso</legend>
+        <div class="field-form">
+            <label for="curso">Escriba el nombre del nuevo curso:</label>
+            <input type="text" name="curso" id="curso" (input)="establecerNombreCurso($event)">
+        </div>
+        <button (click)="crearCurso()">Crear curso</button>
+    </div>
 </main>
