@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    flex-direction: column;
+    .field-form{
+        display: flex;
+        flex-direction: column;
+        label{
+            color: aliceblue;
+            margin-bottom: 5px;
+        }
+        select, option{
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+    button{
+        margin-top: 120px;
+    }
+}
