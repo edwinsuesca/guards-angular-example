@@ -12,7 +12,8 @@ export class AutenticacionService {
   public urlUsuarioIntentaAcceder = '';
 
   iniciarSesion(rol:string) {
-    localStorage.setItem(this.LLAVE_SESION, rol)
+    localStorage.setItem(this.LLAVE_SESION, rol);
+    window.location.href = "/";
   }
 
   cerrarSesion() {
@@ -36,4 +37,3 @@ export class AutenticacionService {
     return true;
   }
 }
-
