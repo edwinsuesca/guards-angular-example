@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -7,8 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./inicio-sesion.component.scss']
 })
 export class InicioSesionComponent {
-  iniciarSesion(rol:string){
-    const sesion = localStorage.setItem('rol', rol)
-    window.location.href = "/"
+
+  constructor(private autenticacionService:AutenticacionService, private router:Router){}
+
+  iniciarSesion(rol:string) {
+    this.autenticacionService.iniciarSesion(rol);
   }
 }

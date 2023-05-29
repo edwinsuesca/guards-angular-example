@@ -10,3 +10,42 @@ h1{
         font-size: 40px;
     }
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff16;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 12px;
+    legend{
+        color: #b58aff;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .field-form{
+        display: flex;
+        flex-direction: column;
+        label{
+            color: aliceblue;
+            margin-bottom: 5px;
+        }
+        select, option, input{
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+        }
+        input[type="text"], textarea{
+            border-radius: 7px;
+            outline: none;
+            &:focus{
+                outline: 2px solid #b58aff;
+            }
+        }
+    }
+    button{
+        margin-top: 50px;
+    }
+}

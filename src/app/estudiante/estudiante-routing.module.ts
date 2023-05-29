@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalificacionesComponent } from './calificaciones/calificaciones.component';
+import { vigilarRolGuard } from '../guards/vigilar-rol.guard';
 
 const routes: Routes = [
   {
